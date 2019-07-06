@@ -21,13 +21,12 @@ public class EditSettingsTest extends DriverFactory {
     public void goToPlan() {
         login(USERNAME, PASSWORD);
         click(HOME_MANAGE_PLAN);
-        click(SIDEBAR_SETTINGS);
-        waitForLoading();
     }
 
     @BeforeMethod
     public void goToSettings() {
-        goToUrl(TEST_SETTINGS_URL);
+        click(SIDEBAR_SETTINGS);
+        waitForLoading();
         softAssert = new SoftAssert();
     }
 
