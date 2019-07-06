@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AMAYSIM-EXAM">
+    <test name="Test Suite for Settings Tests" verbose="2" parallel="classes" thread-count="1">
+        <classes>
+            <class name="com.amaysim.exam.tests.EditSettingsTest" />
+        </classes>
+    </test>
+</suite>
